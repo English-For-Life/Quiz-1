@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="home-box custom-box">
+        <h3>ВИКТОРИНА - <span>Quiz 1</span></h3>
+        <p>Количество вопросов: <span class="total-question"></span></p>
+        <button type="button" class = "btn" onclick="startQuiz()">Начать Викторину</button>
+    </div>
+
+    <div class="quiz-box custom-box hide">
+        <div class="question-number">
+            
+        </div>
+        <div class="question-text">
+           
+        </div>
+        <div class="option-container">
+            
+        </div>
+        <div class="next-question-btn">
+            <button type="button" class="btn" onclick="next()">ДАЛЕЕ</button>
+        </div>
+        <div class="answers-indicator">
+            
+        </div>
+
+    </div>
+
+    <div class="result-box custom-box hide">
+        <h1>Результат Викторины</h1>
+        <table>
+            <tr>
+                <td>Всего вопросов</td>
+                <td><span class="total-question"></span></td>
+            </tr>
+            <tr>
+                <td>Отвечено</td>
+                <td><span class="total-attempt"></span></td>
+            </tr>
+            <tr>
+                <td>Правильно</td>
+                <td><span class="total-correct"></span></td>
+            </tr>
+            <tr>
+                <td>Неправильно</td>
+                <td><span class="total-wrong"></span></td>
+            </tr>
+            <tr>
+                <td>В процентах</td>
+                <td><span class="percentage"></span></td>
+            </tr>
+            <tr>
+                <td>Ваш общий счет</td>
+                <td><span class="total-score"></span></td>
+            </tr>
+        </table>
+        <button type="button" class="btn" onclick="tryAgainQuiz()">Пройти Еще</button>
+        <button type="button" class="btn" onclick="goHome()">На Главную</button>
+
+    </div>
+    <script src="./questions.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
